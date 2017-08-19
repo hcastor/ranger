@@ -1,0 +1,9 @@
+FROM python:alpine
+
+COPY ./proxy_example/requirements.txt /
+RUN pip install -r /requirements.txt
+
+COPY ./proxies/data/proxies.json /
+COPY ./tools/*.py /
+COPY ./proxy_example/example.py /
+CMD ["python", "/example.py"]

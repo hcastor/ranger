@@ -1,0 +1,6 @@
+browsermob-proxy==0.7.1
+selenium==3.0.2
+slackclient==1.0.4
+html5lib==0.999999999
+requests==2.13.0
+robobrowser==0.5.3
